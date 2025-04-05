@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- <div id="div" style="width: 400px;height: 500px;border: 1px solid black;text-align: center;">
+        <h2 id="text" style="text-align: center;"><i>Lampa</i></h2><hr>
+        <img id="tet" style="padding: 80px 140px;" src="./yoniq.jpg" alt=""><hr>
+        <button style="background-color:blue ;color: white;border: none;float: left;margin-left:40px; margin-top: 10px;" onclick="
+        document.body.style.background = 'green'; document.getElementById('tet').src='./yoniq.jpg';
+        document.getElementById('text').textContent='Yoniq'
+         ">ON</button>
+        <button style="background-color: blue;color: white;border: none;float: right;margin-right:40px;margin-top: 10px; " onclick="
+        document.body.style.background = 'red'; document.getElementById('tet').src='./ochiq.jpg'; 
+        document.getElementById('text').textContent=`o'chiq`
+        ">OFF</button> -->
+
+
+
+
+       <div id="bus" style="width: 400px;height: 500px;border: 1px solid black;text-align: center;margin-left: 600px;">
+        <h2 id="text"><i>Lampa</i></h2><hr>
+        <img id="tet" style="padding: 80px 140px;" src="./yoniq.jpg" alt=""><hr>
+        <button id="ha" style="background-color:blue ;color: white;border: none;float: left;margin-left:40px; margin-top: 10px;" >ON</button>
+        <button id="yo'q" style="background-color:blue ;color: white;border: none;float: right;margin-right:40px; margin-top: 10px;" >OFF</button>
+    </div>
+        <script>
+            const tugma=document.getElementById(`ha`);
+            tugma.addEventListener(`click`, function() {
+                document.body.style.background='yellow';
+                document.getElementById('tet').src='./yoniq.jpg';
+                document.getElementById('text').textContent='Yoniq'
+            })
+            const tugm=document.getElementById(`yo'q`);
+            tugm.addEventListener(`click`, function() {
+                document.body.style.background='black'
+                document.getElementById('tet').src='./ochiq.jpg';
+                document.getElementById('text').textContent='ochiq'
+            })
+        </script>
+</body>
+</html>
